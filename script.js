@@ -1,33 +1,34 @@
-let num = 50;
-
-switch (num) {
-    case num < 40:
-        console.log('Number is less than 40');
-        break;
-    case num > 100:
-        console.log('Number is greater than 100');
-        break;
-    case num > 80:
-        console.log('Number is between 80 and 100');
-        break;
-    case 50:
-        console.log('Number is equal to 50');
-        break;
-    default:
-        console.log('Number is not in the specified range');
-        break;
-}
-
-// while (num < 55) {
-//     console.log(num);
-//     num++;
+// function showFirstMessage(text) {
+//     alert(text);
+//     let num = 20;
+//     return num;
 // }
+//
+// console.log(showFirstMessage("Hello, World!"));
 
-// do {
-//     console.log(num);
-//     num++;
-// } while (num < 55);
 
-for (let i = num; i < 55; i++) {
-    console.log(i);
-}
+// let func = function(a, b) {
+//     return a + b;
+// }
+//
+//
+// console.log(func(1, 2))
+
+
+
+// let func = (a, b) => a + b
+// console.log(func(4,5))
+
+
+let str = "TeSt";
+console.log(str);
+
+console.log(str.length);
+
+console.log(str.toUpperCase());
+
+console.log(str.toLowerCase())
+
+let twelve = "12.2px";
+// console.log(Math.round(twelve));
+console.log(parseFloat(twelve));
