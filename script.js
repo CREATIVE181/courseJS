@@ -1,10 +1,21 @@
-'use strict';
+// function first() {
+//     setTimeout(function () {
+//         console.log(1);
+//     }, 500);
+// }
+//
+// function second() {
+//     console.log(2);
+// }
 
+// first();
+// second();
 
-// alert('Hello, World!');
+function learnJS(lang, callback) {
+    console.log(`Learning ${lang}...`);
+    callback();
+}
 
-// let answerBool = confirm('Are you sure you want to proceed?');
-// console.log(answerBool);
-
-let answerString = prompt('Как вас зовут?', '');
-console.log(answerString);
+learnJS('JavaScript', function() {
+    console.log('JavaScript learning completed!');
+});
