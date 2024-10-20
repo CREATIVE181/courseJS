@@ -1,10 +1,12 @@
-'use strict';
+let admin = {
+    rule: 'All',
+    permission: "read"
+};
 
+let user = {
+    rule: 'Read'
+};
 
-// alert('Hello, World!');
+user.__proto__ = admin;
 
-// let answerBool = confirm('Are you sure you want to proceed?');
-// console.log(answerBool);
-
-let answerString = prompt('Как вас зовут?', '');
-console.log(answerString);
+console.log(user)
