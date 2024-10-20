@@ -1,24 +1,12 @@
-let options = {
-    width: 1024,
-    height: 1024,
-    name: "test"
+let admin = {
+    rule: 'All',
+    permission: "read"
 };
 
-console.log(options.name);
-
-options.bool = false;
-options.colors = {
-    border: "black",
-    background: "red"
+let user = {
+    rule: 'Read'
 };
 
-delete options.bool;
+user.__proto__ = admin;
 
-console.log(options);
-
-
-for (let key in options) {
-    console.log(key, options[key]);
-}
-
-console.log(Object.keys(options).length);
+console.log(user)
