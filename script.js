@@ -1,24 +1,13 @@
-let options = {
-    width: 1024,
-    height: 1024,
-    name: "test"
-};
+let box = document.getElementById('box'),
+    btn = document.getElementsByTagName('button'),
+    circle = document.getElementsByClassName('circle'),
+    heart = document.querySelectorAll('.heart'); // id: "#id", class: ".class", tag: "tag"
 
-console.log(options.name);
-
-options.bool = false;
-options.colors = {
-    border: "black",
-    background: "red"
-};
-
-delete options.bool;
-
-console.log(options);
+console.log(box);
+console.log(btn[0]);
+console.log(circle[2]);
+console.log(heart[0]);
 
 
-for (let key in options) {
-    console.log(key, options[key]);
-}
 
-console.log(Object.keys(options).length);
+
