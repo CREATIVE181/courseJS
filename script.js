@@ -1,10 +1,24 @@
-'use strict';
+let options = {
+    width: 1024,
+    height: 1024,
+    name: "test"
+};
+
+console.log(options.name);
+
+options.bool = false;
+options.colors = {
+    border: "black",
+    background: "red"
+};
+
+delete options.bool;
+
+console.log(options);
 
 
-// alert('Hello, World!');
+for (let key in options) {
+    console.log(key, options[key]);
+}
 
-// let answerBool = confirm('Are you sure you want to proceed?');
-// console.log(answerBool);
-
-let answerString = prompt('Как вас зовут?', '');
-console.log(answerString);
+console.log(Object.keys(options).length);
