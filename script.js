@@ -1,21 +1,24 @@
-// function first() {
-//     setTimeout(function () {
-//         console.log(1);
-//     }, 500);
-// }
-//
-// function second() {
-//     console.log(2);
-// }
+let options = {
+    width: 1024,
+    height: 1024,
+    name: "test"
+};
 
-// first();
-// second();
+console.log(options.name);
 
-function learnJS(lang, callback) {
-    console.log(`Learning ${lang}...`);
-    callback();
+options.bool = false;
+options.colors = {
+    border: "black",
+    background: "red"
+};
+
+delete options.bool;
+
+console.log(options);
+
+
+for (let key in options) {
+    console.log(key, options[key]);
 }
 
-learnJS('JavaScript', function() {
-    console.log('JavaScript learning completed!');
-});
+console.log(Object.keys(options).length);
